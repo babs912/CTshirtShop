@@ -1,7 +1,11 @@
 
-<div class="container">
+<div class="container mt-5">
   <div class="row">
-    <app-product-item class="col-sm-4" *ngFor="let product of products" [product]="product" ></app-product-item>
+    <app-product-item 
+      class="col-sm-4" 
+      *ngFor="let product of products" 
+      [product]="product"
+      (click)="GotoProductDetails(product.id)" ></app-product-item>
   </div>
 </div>
 

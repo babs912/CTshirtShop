@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ProductDetailsComponent } from './shared/components/product-details/product-details.component';
+import { WorkspaceComponent } from './components/workspace/workspace.component';
 
 const routes: Routes = [
   {
@@ -14,9 +16,18 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'product/:id',
+    component: ProductDetailsComponent
+  },
+  {
+    path:'workspace',
+    component: WorkspaceComponent
+  },
+  {
     path:'**',
     component: NotFoundComponent
   }
+  
 
 ];
 

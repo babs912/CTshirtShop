@@ -8,9 +8,13 @@ import { WorkspaceComponent } from './components/workspace/workspace.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProductItemComponent } from './shared/components/product-item/product-item.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { ProductService } from './services/product.service';
+import { ProductDetailsComponent } from './shared/components/product-details/product-details.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
-  entryComponents:[ProductItemComponent],
+  entryComponents:[ProductItemComponent, NavbarComponent],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -18,12 +22,16 @@ import { ProductItemComponent } from './shared/components/product-item/product-i
     LoginComponent,
     NotFoundComponent,
     ProductItemComponent,
+    NavbarComponent,
+    ProductDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

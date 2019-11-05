@@ -1,7 +1,7 @@
 <div class="product-item">
   <div class="card">
     <div class="card-body">
-      <img src="assets/img/products/p1.png" alt="" class="img-fluid">
+      <img [src]='"assets/img/products/"+product.img_url' alt="" class="img-fluid">
     </div>
     <div class="card-footer bg-white p-2 text-center">
        <h5>{{product.name}}</h5>
