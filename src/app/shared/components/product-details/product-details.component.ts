@@ -23,5 +23,9 @@ export class ProductDetailsComponent implements OnInit {
     });
   }
 
+  gotToWorkspace(){
+    this.router.navigate(['workspace',this.product.id]);
+  }
+
 
 }

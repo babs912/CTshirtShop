@@ -1,0 +1,17 @@
+.prod-panel{
+    background-color: #fff;
+    border: 1px solid red;
+    padding: 1.3em;
+
+    
+}
+.prod-panel .prod-item{
+    height: 80px;
+    margin-bottom: .5em;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.prod-panel .prod-item:hover{
+   background-color: #66a5eeb7;
+}

@@ -22,6 +22,18 @@ export class ProductService {
       name: "product 3",
       price: 3000,
       img_url:"p3.png"
+    },
+    {
+      id: 4,
+      name: "product 5",
+      price: 3000,
+      img_url:"p4.png"
+    },
+    {
+      id: 5,
+      name: "product 5",
+      price: 3000,
+      img_url:"p5.png"
     }
   ]
 

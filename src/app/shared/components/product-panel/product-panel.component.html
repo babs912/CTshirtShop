@@ -1,0 +1,7 @@
+<div class="prod-panel">
+  <div class="row">
+    <div  *ngFor="let prod of products; let i = index" class="col-3 prod-item p-1">
+      <img [src]='"assets/img/products/"+prod.img_url' alt="" class="prod-item img-fluid p-2 border" (click)="getProduct(prod.id)">
+    </div>
+  </div>
+</div>

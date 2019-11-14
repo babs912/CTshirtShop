@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,9 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { ProductService } from './services/product.service';
 import { ProductDetailsComponent } from './shared/components/product-details/product-details.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
+import { ColorPickerModule } from 'ngx-color-picker';
+import { DesignPanelComponent } from './shared/components/design-panel/design-panel.component';
+import { ProductPanelComponent } from './shared/components/product-panel/product-panel.component';
 @NgModule({
   entryComponents:[ProductItemComponent, NavbarComponent],
   declarations: [
@@ -24,12 +27,18 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     ProductItemComponent,
     NavbarComponent,
     ProductDetailsComponent,
+    DesignPanelComponent,
+    ProductPanelComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule,
+    ColorPickerModule,
+    
+
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

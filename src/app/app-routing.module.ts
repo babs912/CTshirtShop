@@ -20,7 +20,7 @@ const routes: Routes = [
     component: ProductDetailsComponent
   },
   {
-    path:'workspace',
+    path:'workspace/:id',
     component: WorkspaceComponent
   },
   {

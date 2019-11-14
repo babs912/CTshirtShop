@@ -1,0 +1,7 @@
+<div class="design-panel">
+  <div class="row">
+    <div  *ngFor="let design of designs; let i = index" class="col-3 design-item p-2 mt-2">
+      <img [src]='"assets/img/design/"+design.url' alt="" class="design-item img-fluid p-2 border" (click)="addImage(i)">
+    </div>
+  </div>
+</div>

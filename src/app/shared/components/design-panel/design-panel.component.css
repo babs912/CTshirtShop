@@ -1,0 +1,6 @@
+.design-item{
+    height: 72px !important;
+    max-height: 72px !important;
+
+    cursor: pointer;
+}
